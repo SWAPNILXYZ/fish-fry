@@ -121,7 +121,7 @@ function draw() {
   background(backgroundImg); 
   noStroke();
   textSize(25);
-  fill("white");
+  fill("red");
   text("Score: "+score, 650, 40);
   g1.display();
   g2.display();
