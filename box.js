@@ -5,7 +5,7 @@ class Box extends BaseClass {
       this.visibility = 255;
     }
      display(){
-       if (this.body.speed < 4.5){
+       if (this.body.speed < 5){
          super.display();
        }
        else {
@@ -17,4 +17,10 @@ class Box extends BaseClass {
      pop();
        }
      }
-  };
+     score(){
+      if (this.visibility < 200 && (this.visibility > -105)){
+        score = score + 1;
+      }
+    }
+    };
+  
